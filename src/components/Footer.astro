@@ -1,4 +1,5 @@
 ---
+import { email } from '@/personalData'
 const currentYear = new Date().getFullYear();
 ---
 
@@ -22,10 +23,8 @@ const currentYear = new Date().getFullYear();
         >
       </li>
       <li>
-        <a
-          id="contacto"
-          href="mailto:mfigueras11@gmail.com"
-          class="hover:underline">Contact</a
+        <a id="contacto" href={"mailto:" + email} class="hover:underline"
+          >Contact</a
         >
       </li>
     </ul>
